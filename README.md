@@ -3,6 +3,8 @@ Phase 1: 14 Days – Databricks AI Challenge (hands-on learning) &amp; Phase 2: 
 
 <img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/e91aeb52-3993-4a1a-8f5c-fbd38b9eaec0" />
 
+
+----
 ## Problem Definition:
 Predict mental health risk (anxiety/depression severity) based on social media behavior and lifestyle patterns and understand how risk factors differ between males and females.
 
@@ -10,6 +12,8 @@ Predict mental health risk (anxiety/depression severity) based on social media b
 - Mental health risk is influenced by multiple interacting factors.
 - Simple thresholds (like “screen time > 6 hrs.”) miss complex relationships
 - ML can learn nonlinear patterns between sleep, usage time, content type, and psychometric scores.
+
+----
 
 ## Data Understanding & Feature Engineering:
 Data Understanding:
@@ -26,6 +30,8 @@ Designed specifically for gender-based comparative analysis and behavioral risk 
 - Late-night usage and reduced sleep appear frequently with higher depression scores.
 - Passive content consumption and social comparison are common anxiety triggers.
 
+----
+
 ## Feature Engineering (Silver Layer) : 
 Cleaned raw data by: Removing duplicates and handling missing values in critical numerical fields.
 Created behavioral risk features to translate raw usage into meaningful signals:
@@ -37,6 +43,8 @@ Engineered Features:
 - Social_Comparison_Risk: Represented exposure to comparison-driven content.
 - High_Mental_Health_Risk (Target): Flagged users with moderate-to-severe anxiety or depression scores.
 These features converted raw digital behavior into interpretable mental health risk signals.
+
+----
 
 ## AI Innovation & Insight Generation:
 What makes this project “AI” and not just SQL?
@@ -52,6 +60,8 @@ These features helped uncover hidden behavioral patterns, not obvious from raw d
 
 Innovation here is feature engineering + insight generation from behavior, not just prediction.
 
+----
+
 ## Training, Evaluation & Metrics:
 How I validated the model?
 Model training and experiments were tracked using Mlflow and I logged key evaluation metrics:
@@ -64,6 +74,8 @@ Model training and experiments were tracked using Mlflow and I logged key evalua
 - Predictions stored in a Gold prediction table.
 - Metrics and model version fully reproducible via Mlflow.
 
+----
+
 ## Database ↔ AI Workflow (Lakehouse Integration):
 Data flows through:
 - Bronze → Raw ingestion (Delta).
@@ -74,6 +86,8 @@ Predictions written back to Gold prediction table.
 Same data serves: SQL Analytics | Dashboards | ML training | Model inference.
 
 This avoids data duplication and ensures single source of truth.
+
+----
 
 ## Business Impact & Practical Use:
 Why this project matters in the real world?
@@ -87,7 +101,7 @@ Why this project matters in the real world?
 - Risk-based user segmentation.
 - Responsible AI use in social platforms.
 
-Scalable & production-ready:
+### Scalable & production-ready:
 - Automated jobs.
 - Governed data access via Unity Catalog.
 - ML lifecycle managed with Mlflow.
