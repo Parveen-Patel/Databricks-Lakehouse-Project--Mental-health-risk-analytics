@@ -16,7 +16,7 @@ Predict mental health risk (anxiety/depression severity) based on social media b
 ----
 
 ## Data Understanding & Feature Engineering:
-Data Understanding:
+### Data Understanding:
 The dataset represents 8,000 social media users with detailed digital behavior and mental health indicators.
 Each record combines:
 - Demographics (Age, Gender)
@@ -47,7 +47,7 @@ These features converted raw digital behavior into interpretable mental health r
 ----
 
 ## AI Innovation & Insight Generation:
-What makes this project “AI” and not just SQL?
+### What makes this project “AI” and not just SQL?
 - Instead of only reporting mental health statistics, I designed behavioral risk signals from raw social media usage data.
 - I transformed daily habits (screen time, sleep, late-night usage, activity type) into risk indicators.
 These features helped uncover hidden behavioral patterns, not obvious from raw data alone.
@@ -63,7 +63,7 @@ Innovation here is feature engineering + insight generation from behavior, not j
 ----
 
 ## Training, Evaluation & Metrics:
-How I validated the model?
+### How I validated the model?
 Model training and experiments were tracked using Mlflow and I logged key evaluation metrics:
 - Accuracy –Mental health predictions require balanced evaluation.
 - AUC –AUC helps avoid misleading accuracy in imbalanced datasets.
@@ -90,7 +90,7 @@ This avoids data duplication and ensures single source of truth.
 ----
 
 ## Business Impact & Practical Use:
-Why this project matters in the real world?
+### Why this project matters in the real world?
 - Enables early detection of mental health risk based on behavior and helps platforms:
 - Identify high-risk users proactively.
 - Design targeted well-being interventions.
