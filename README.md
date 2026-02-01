@@ -3,7 +3,7 @@ Phase 1: 14 Days – Databricks AI Challenge (hands-on learning) &amp; Phase 2: 
 
 <img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/e91aeb52-3993-4a1a-8f5c-fbd38b9eaec0" />
 
-## Problem Definition:
+### Problem Definition:
 Predict mental health risk (anxiety/depression severity) based on social media behavior and lifestyle patterns and understand how risk factors differ between males and females.
 
 # Why AI (Not Rules)?    Because:
