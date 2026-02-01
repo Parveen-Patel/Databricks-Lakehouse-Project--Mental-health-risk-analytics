@@ -3,10 +3,10 @@ Phase 1: 14 Days – Databricks AI Challenge (hands-on learning) &amp; Phase 2: 
 
 <img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/e91aeb52-3993-4a1a-8f5c-fbd38b9eaec0" />
 
-### Problem Definition:
+## Problem Definition:
 Predict mental health risk (anxiety/depression severity) based on social media behavior and lifestyle patterns and understand how risk factors differ between males and females.
 
-# Why AI (Not Rules)?    Because:
+### Why AI (Not Rules)?    Because:
 - Mental health risk is influenced by multiple interacting factors.
 - Simple thresholds (like “screen time > 6 hrs.”) miss complex relationships
 - ML can learn nonlinear patterns between sleep, usage time, content type, and psychometric scores.
@@ -21,12 +21,12 @@ Each record combines:
 The data is synthetic but scientifically grounded, generated using psychological research patterns.
 Designed specifically for gender-based comparative analysis and behavioral risk modeling.
 
-# Key observations from raw data:
+### Key observations from raw data:
 - Mental health impact is behavior-driven, not caused by a single variable.
 - Late-night usage and reduced sleep appear frequently with higher depression scores.
 - Passive content consumption and social comparison are common anxiety triggers.
 
-# Feature Engineering (Silver Layer) : 
+## Feature Engineering (Silver Layer) : 
 Cleaned raw data by: Removing duplicates and handling missing values in critical numerical fields.
 Created behavioral risk features to translate raw usage into meaningful signals:
 Engineered Features:
@@ -44,7 +44,7 @@ What makes this project “AI” and not just SQL?
 - I transformed daily habits (screen time, sleep, late-night usage, activity type) into risk indicators.
 These features helped uncover hidden behavioral patterns, not obvious from raw data alone.
 
-# Key AI-driven insights generated:
+### Key AI-driven insights generated:
 - High screen time + sleep deprivation strongly correlates with higher anxiety and depression scores.
 - Late-night social media usage amplifies mental health risk.
 - Passive consumption and social comparison increase anxiety levels.
@@ -59,7 +59,7 @@ Model training and experiments were tracked using Mlflow and I logged key evalua
 - AUC –AUC helps avoid misleading accuracy in imbalanced datasets.
 - Confusion Matrix – false positives vs false negatives- supports explainability and trust.
 
-# Outcome:
+### Outcome:
 - Model achieved stable performance.
 - Predictions stored in a Gold prediction table.
 - Metrics and model version fully reproducible via Mlflow.
@@ -82,7 +82,7 @@ Why this project matters in the real world?
 - Design targeted well-being interventions.
 - Monitor impact of platform usage patterns.
 
-# Practical applications:
+### Practical applications:
 - Mental health monitoring dashboards.
 - Risk-based user segmentation.
 - Responsible AI use in social platforms.
